@@ -9,6 +9,10 @@ import VerificationScreen from "../Screens/VerificationScreen";
 import SetNewPasswordScreen from "../Screens/SetNewPassword";
 import ChooseCategoryScreen from "../Screens/ChooseCategoryScreen";
 import FeedScreen from "../Screens/FeedScreen";
+import ChallengeScreen from "../Screens/ChallengeScreen";
+import ProfileScreen from "../Screens/Profile/ProfileScreen";
+import EditProfileScreen from "../Screens/Profile/EditProfile";
+import { ArtScreen } from "../Screens/ArtScreen";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +28,10 @@ const AuthNavigator = () => {
         <Stack.Screen name="ResetPassword" component={SetNewPasswordScreen} />
         <Stack.Screen name="ChooseCategory" component={ChooseCategoryScreen} />
         <Stack.Screen name="FeedScreen" component={FeedScreen} />
+        <Stack.Screen name="challengeScreen" component={ChallengeScreen} />
+        <Stack.Screen name="profile" component={ProfileScreen} />
+        <Stack.Screen name="EditProfile" component={EditProfileScreen} />
+        <Stack.Screen name="ArtScreen" component={ArtScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

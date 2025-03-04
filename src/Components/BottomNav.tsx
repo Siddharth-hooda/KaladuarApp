@@ -1,7 +1,7 @@
 import React from "react";
 import { View, TouchableOpacity, StyleSheet, Image } from "react-native";
 
-const BottomNav = ({ navigation }: any) => {
+const BottomNav = ({ navigation, route }: any) => {
   return (
     <View style={styles.navContainer}>
       <TouchableOpacity>
@@ -10,13 +10,13 @@ const BottomNav = ({ navigation }: any) => {
       <TouchableOpacity>
         <Image source={require("../../assets/Images/category-outlined.png")} style={styles.icon} />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.plusButton}>
+      <TouchableOpacity style={styles.plusButton} onPress={() => navigation.navigate("challengeScreen")}>
         <Image source={require("../../assets/Images/Plus.png")} style={styles.plusIcon} />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ArtScreen')}>
         <Image source={require("../../assets/Images/marketplace-outlined.png")} style={styles.icon} />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> navigation.navigate("profile")}>
         <Image source={require("../../assets/Images/profile-outlined.png")} style={styles.icon} />
       </TouchableOpacity>
     </View>
