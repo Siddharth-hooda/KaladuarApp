@@ -45,4 +45,5 @@ const styles = StyleSheet.create({
   subText: {textAlign: 'center', marginVertical: 10, color: '#555'},
 });
 
+
 export default SetNewPasswordScreen;

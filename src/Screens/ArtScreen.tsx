@@ -1,15 +1,14 @@
 import React from 'react';
-import { View, Text, TextInput, Image, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, TextInput, Image, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-import GalleryItem from '../../Components/Gallery/GalleryItem';
-import TabSelector from '../../Components/Gallery/TabSelector';
-import styles from '../../styles/GalleryScreenStyles';
+import GalleryItem from '../Components/Gallery/GalleryItem';
+import TabSelector from '../Components/Gallery/TabSelector';
 
 const mockData = [
-  { id: '1', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../../assets/woman-eating.jpg') },
-  { id: '2', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../../assets/woman-eating.jpg') },
-  { id: '3', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../../assets/woman-eating.jpg') },
-  { id: '4', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../../assets/woman-eating.jpg') },
+  { id: '1', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../assets/Images/woman-eating.jpg.png') },
+  { id: '2', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../assets/Images/woman-eating.jpg.png') },
+  { id: '3', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../assets/Images/woman-eating.jpg.png') },
+  { id: '4', title: 'Woman Eating', price: 12, oldPrice: 15, discount: 20, image: require('../../assets/Images/woman-eating.jpg.png') },
 ];
 
 const GalleryScreen = () => {
@@ -35,5 +34,9 @@ const GalleryScreen = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {}, searchContainer: {}, searchIcon: {}, searchInput: {}, galleryList: {}
+})
 
 export default GalleryScreen;

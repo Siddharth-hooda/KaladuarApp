@@ -12,7 +12,7 @@ import FeedScreen from "../Screens/FeedScreen";
 import ChallengeScreen from "../Screens/ChallengeScreen";
 import ProfileScreen from "../Screens/Profile/ProfileScreen";
 import EditProfileScreen from "../Screens/Profile/EditProfile";
-import { ArtScreen } from "../Screens/ArtScreen";
+import GalleryScreen from "../Screens/ArtScreen";
 
 const Stack = createStackNavigator();
 
@@ -31,7 +31,7 @@ const AuthNavigator = () => {
         <Stack.Screen name="challengeScreen" component={ChallengeScreen} />
         <Stack.Screen name="profile" component={ProfileScreen} />
         <Stack.Screen name="EditProfile" component={EditProfileScreen} />
-        <Stack.Screen name="ArtScreen" component={ArtScreen} />
+        {/* <Stack.Screen name="ArtScreen" component={GalleryScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

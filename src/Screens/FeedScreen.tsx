@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import PostCard from '../Components/PostCard';
 import BottomNav from '../Components/BottomNav';
+// import Search from '../Components/Common/Search';
 
 const FeedScreen = ({navigation}: any) => {
   return (
@@ -18,6 +19,7 @@ const FeedScreen = ({navigation}: any) => {
           placeholder="Discover posts from your circle..."
           style={styles.searchBar}
         />
+        {/* <Search /> */}
         <Image source={require('../../assets/Images/notification.png')} />
         <Image source={require('../../assets/Images/message.png')} />
       </View>
