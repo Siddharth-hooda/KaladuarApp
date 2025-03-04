@@ -9,17 +9,17 @@ import {
 } from 'react-native';
 import PostCard from '../Components/PostCard';
 import BottomNav from '../Components/BottomNav';
-// import Search from '../Components/Common/Search';
+import Search from '../Components/Common/Search';
 
 const FeedScreen = ({navigation}: any) => {
   return (
     <View style={styles.container}>
       <View style={styles.search}>
-        <TextInput
+        {/* <TextInput
           placeholder="Discover posts from your circle..."
           style={styles.searchBar}
-        />
-        {/* <Search /> */}
+        /> */}
+        <Search />
         <Image source={require('../../assets/Images/notification.png')} />
         <Image source={require('../../assets/Images/message.png')} />
       </View>

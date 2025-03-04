@@ -21,7 +21,7 @@ const LoginScreen = ({ navigation }: any) => {
       <TouchableOpacity>
         <Text style={styles.forgotText} onPress={() => navigation.navigate("ForgotPass")}>FORGOT PASSWORD</Text>
       </TouchableOpacity>
-      <AuthButton title="LOG IN" onPress={() => navigation.navigate("FeedScreen")} />
+      <AuthButton title="LOG IN" onPress={() => navigation.navigate("ChooseCategory")} />
       <Text style={styles.orText}>OR LOG IN BY</Text>
       <SocialLogin />
       <TouchableOpacity onPress={() => navigation.navigate("SignUp")}>
