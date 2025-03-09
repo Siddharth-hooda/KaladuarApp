@@ -15,8 +15,8 @@ const ProfileScreen = ({navigation}: any) => {
 
         <View style={{paddingHorizontal: 20}}>
           <ProfileMenuItem title="Account Information" onPress={() => navigation.navigate("EditProfile")} />
-          <ProfileMenuItem title="Shop" onPress={() => {}} />
-          <ProfileMenuItem title="Orders" onPress={() => {}} />
+          <ProfileMenuItem title="Shop" onPress={() => navigation.navigate("")} />
+          <ProfileMenuItem title="Orders" onPress={() => navigation.navigate("")} />   
           <ProfileMenuItem title="Collection" onPress={() => {}} />
           <ProfileMenuItem title="Activities" onPress={() => {}} />
           <ProfileMenuItem title="Account Security" onPress={() => {}} />

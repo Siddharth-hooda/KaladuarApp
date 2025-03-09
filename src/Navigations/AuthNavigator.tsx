@@ -31,7 +31,7 @@ const AuthNavigator = () => {
         <Stack.Screen name="challengeScreen" component={ChallengeScreen} />
         <Stack.Screen name="profile" component={ProfileScreen} />
         <Stack.Screen name="EditProfile" component={EditProfileScreen} />
-        {/* <Stack.Screen name="ArtScreen" component={GalleryScreen} /> */}
+        <Stack.Screen name="ArtScreen" component={GalleryScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

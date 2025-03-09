@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, TextInput, Image, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import { View, TextInput, FlatList, StyleSheet } from 'react-native';
+// import { FontAwesome } from '@expo/vector-icons';
 import GalleryItem from '../Components/Gallery/GalleryItem';
 import TabSelector from '../Components/Gallery/TabSelector';
 
@@ -16,7 +16,7 @@ const GalleryScreen = () => {
     <View style={styles.container}>
       {/* Search Bar */}
       <View style={styles.searchContainer}>
-        <FontAwesome name="search" size={20} color="#C5A87D" style={styles.searchIcon} />
+        {/* <FontAwesome name="search" size={20} color="#C5A87D" style={styles.searchIcon} /> */}
         <TextInput placeholder="Search" style={styles.searchInput} />
       </View>
       

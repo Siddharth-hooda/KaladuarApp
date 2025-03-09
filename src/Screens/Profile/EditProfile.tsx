@@ -31,7 +31,7 @@ const EditProfileScreen = ({navigation}: any) => {
       </Text>
       <InputField placeholder="First Name" value="Bruno Pham" />
       <Text style={{ fontWeight: '700', padding: 10 }}>
-        Last Name
+        Last Name 
       </Text>
       <InputField placeholder="Last name" value="Pham" />
       <Text style={{ fontWeight: '700', padding: 10 }}>
